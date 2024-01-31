@@ -1,10 +1,11 @@
 * {
-    --marrom-claro: #e5c29f;
+    --marrom-claro: #e6c29e;
     --marrom-escuro: #d7b899;
     --azul-n1: #1976d2;
     --verde-n2: #388e3c;
     --vermelho-n3: #d32f2f;
     --roxo-n4: #7b1fa2;
+    --preto-n5: black;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0;
@@ -48,8 +49,12 @@ body {
 }
 
 .square {
+    font-size: 1.2em;
+    display: flex;
     height: 100%;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .square:nth-child(odd) {
@@ -60,4 +65,17 @@ body {
     background-color: #bcebcc6f;
 }
 
+.bandeira{
+    justify-content: center;
+    align-items: center;
+}
+
 .flaged{}
+
+.revealed_odd {
+    background-color: #e6c29e;
+}
+
+.revealed_even {
+    background-color: #d7b899;
+}
